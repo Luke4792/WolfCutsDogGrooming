@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700&family=Lilita+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=1">
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 
@@ -75,7 +75,7 @@
       <ol class="steps">
         <li>
           <h3>Get in touch</h3>
-          <p>Call, email, or message me on <a href="https://www.instagram.com/wolfcutsgrooming/" target="_blank" rel="noopener">Instagram</a> or <a href="https://www.facebook.com/wolfcutsgrooming/" target="_blank" rel="noopener">Facebook</a>. Tell me your dog’s breed and when they were last groomed.</p>
+          <p><a href="tel:+447769259163">Call</a>, <a href="mailto:wolfcutsgrooming@gmail.com">email</a>, fill in my <a href="#contact-form">booking form</a>, or message me on <a href="https://www.instagram.com/wolfcutsgrooming/" target="_blank" rel="noopener">Instagram</a> or <a href="https://www.facebook.com/wolfcutsgrooming/" target="_blank" rel="noopener">Facebook</a>. Tell me your dog’s breed and when they were last groomed.</p>
         </li>
         <li>
           <h3>Pick a time</h3>
@@ -96,6 +96,10 @@
 
         <table class="price-table">
           <caption class="visually-hidden">Grooming prices by service and dog size</caption>
+          <colgroup>
+            <col class="col-label">
+            <col><col><col><col>
+          </colgroup>
           <thead>
             <tr>
               <td></td>
@@ -106,30 +110,37 @@
             </tr>
           </thead>
           <tbody>
+            <tr class="group"><th scope="rowgroup" colspan="5">Full groom</th></tr>
             <tr>
-              <th scope="row">Full groom <span>short coat</span></th>
+              <th scope="row">Short coat</th>
               <td>£35</td><td>£42</td><td>£45</td><td>£49</td>
             </tr>
             <tr>
-              <th scope="row">Full groom <span>long coat</span></th>
+              <th scope="row">Long coat</th>
               <td>£50</td><td>£55</td><td>£60</td><td>£78</td>
             </tr>
             <tr>
-              <th scope="row">Full groom <span>spaniel</span></th>
-              <td colspan="4" class="span-all">£50</td>
+              <th scope="row">Spaniel</th>
+              <td colspan="4"><span class="span-bar">£50 <small>any size</small></span></td>
             </tr>
+          </tbody>
+          <tbody>
+            <tr class="group"><th scope="rowgroup" colspan="5">Bath &amp; brush</th></tr>
             <tr>
-              <th scope="row">Bath &amp; brush <span>short coat</span></th>
+              <th scope="row">Short coat</th>
               <td>£30</td><td>£32</td><td>£37</td><td>£42</td>
             </tr>
             <tr>
-              <th scope="row">Bath &amp; brush <span>long coat</span></th>
+              <th scope="row">Long coat</th>
               <td>£32</td><td>£35</td><td>£40</td><td>£47</td>
             </tr>
+          </tbody>
+          <tbody>
+            <tr class="group"><th scope="rowgroup" colspan="5">Puppy groom</th></tr>
             <tr>
-              <th scope="row">Puppy groom</th>
-              <td colspan="2" class="span-two">£30</td>
-              <td colspan="2" class="span-two">£35</td>
+              <th scope="row">Any coat</th>
+              <td colspan="2"><span class="span-bar">£30 <small>toy to medium</small></span></td>
+              <td colspan="2"><span class="span-bar">£35 <small>large to X large</small></span></td>
             </tr>
           </tbody>
         </table>

@@ -60,7 +60,7 @@ a:hover { color: var(--rust-dark); }
   border-radius: 4px;
 }
 
-section[id] { scroll-margin-top: var(--nav-offset); }
+section[id], .contact-form { scroll-margin-top: calc(var(--nav-offset) + 1rem); }
 
 .icon {
   width: 1.2em;
@@ -270,18 +270,21 @@ section[id] { scroll-margin-top: var(--nav-offset); }
   background: var(--paper);
   border-radius: 24px;
   overflow: hidden;
+  table-layout: fixed; /* equal-width size columns */
 }
+.price-table .col-label { width: 28%; }
 .price-table th,
 .price-table td {
-  padding: 0.9rem 1rem;
+  padding: 0.8rem 0.5rem;
   text-align: center;
 }
+.price-table thead tr { background: var(--cream); }
 .price-table thead th {
   vertical-align: bottom;
   font-weight: 700;
   font-size: 0.95rem;
+  line-height: 1.25;
   color: var(--rust);
-  background: var(--cream);
 }
 .size-dog {
   display: block;
@@ -297,43 +300,48 @@ section[id] { scroll-margin-top: var(--nav-offset); }
 .size-dog.s3 { width: 33px; height: 33px; }
 .size-dog.s4 { width: 42px; height: 42px; }
 
-.price-table tbody tr + tr { border-top: 1px solid var(--line); }
-.price-table tbody th {
+/* Service groups: a heading row, then one row per coat type */
+.price-table tbody + tbody { border-top: 2px solid var(--line); }
+.price-table tr.group th {
+  padding: 1.1rem 1.25rem 0.2rem;
   text-align: left;
-  font-weight: 700;
+  font: 1.35rem/1.2 var(--display);
+  color: var(--rust);
 }
-.price-table tbody th span {
-  display: block;
-  font-weight: 400;
-  font-size: 0.9rem;
+.price-table tbody th[scope="row"] {
+  padding-left: 1.25rem;
+  text-align: left;
+  font-weight: 500;
 }
 .price-table tbody td {
   font-size: 1.15rem;
   font-variant-numeric: tabular-nums;
 }
+.price-table tbody tr:last-child > * { padding-bottom: 1.1rem; }
 
-/* Phones: service name on its own line, the four prices beneath it */
+/* A price that covers several sizes sits on a bar spanning those columns */
+.span-bar {
+  display: block;
+  padding: 0.35rem 0.5rem;
+  border-radius: 999px;
+  background: var(--cream);
+  line-height: 1.3;
+}
+.span-bar small {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--ink);
+  opacity: 0.8;
+}
+
 @media (max-width: 600px) {
-  .price-table, .price-table thead, .price-table tbody { display: block; }
-  .price-table tr { display: grid; grid-template-columns: repeat(4, 1fr); }
-  .price-table thead td { display: none; }
-  .price-table th, .price-table td { padding: 0.6rem 0.25rem; }
-  .price-table thead th {
-    font-size: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  .price-table tbody th {
-    grid-column: 1 / -1;
-    padding: 0.9rem 1rem 0;
-  }
-  .price-table tbody th span { display: inline; }
-  .price-table tbody th span::before { content: "– "; }
-  .price-table tbody td { padding-bottom: 0.9rem; }
-  .price-table .span-two { grid-column: span 2; }
-  .price-table .span-all { grid-column: 1 / -1; }
+  .price-table .col-label { width: 31%; }
+  .price-table th,
+  .price-table td { padding: 0.65rem 0.2rem; }
+  .price-table thead th { font-size: 0.75rem; }
+  .price-table tr.group th { padding: 1rem 0.9rem 0.1rem; font-size: 1.2rem; }
+  .price-table tbody th[scope="row"] { padding-left: 0.9rem; font-size: 0.9rem; white-space: nowrap; }
+  .price-table tbody td { font-size: 1.05rem; }
 }
 
 /* ---------- Services ---------- */
