@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WolfCuts Dog Grooming | Norton Fitzwarren, Taunton</title>
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700&family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+
+  <!-- Icon sprite (paths from Lucide, ISC licence) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+    <symbol id="i-dog" viewBox="0 0 24 24"><path d="M11.25 16.25h1.5L12 17z"/><path d="M16 14v.5"/><path d="M4.42 11.247A13.152 13.152 0 0 0 4 14.556C4 18.728 7.582 21 12 21s8-2.272 8-6.444a11.702 11.702 0 0 0-.493-3.309"/><path d="M8 14v.5"/><path d="M8.5 8.5c-.384 1.05-1.083 2.028-2.344 2.5-1.931.722-3.576-.297-3.656-1-.113-.994 1.177-6.53 4-7 1.923-.321 3.651.845 3.651 2.235A7.497 7.497 0 0 1 14 5.277c0-1.39 1.844-2.598 3.767-2.277 2.823.47 4.113 6.006 4 7-.08.703-1.725 1.722-3.656 1-1.261-.472-1.855-1.45-2.239-2.5"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><line x1="4" x2="20" y1="7" y2="7"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="17" y2="17"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="#top">
+        <img src="images/logo-small.png" width="44" height="44" alt="">
+        <span>WolfCuts</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+        <span class="visually-hidden">Menu</span>
+      </button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#prices">Prices</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#instagram">Latest grooms</a></li>
+        <li><a href="#find">Find us</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a class="btn btn-small" href="#contact">Book a groom</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section id="top" class="hero" aria-labelledby="hero-heading">
+      <div class="hero-text">
+        <h1 id="hero-heading">Dog grooming in Norton Fitzwarren, Taunton</h1>
+        <p class="lede">Hi, I’m Harri. I groom dogs of every size, from first puppy trims to full grooms for big fluffy coats, at my salon just outside Taunton.</p>
+        <div class="hero-actions">
+          <a class="btn" href="tel:+447769259163">
+            <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+            Call 07769 259163
+          </a>
+          <a class="btn btn-ghost" href="#contact">Send a message</a>
+        </div>
+        <p class="hero-hours"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> Open every day, 7am–8pm</p>
+      </div>
+      <div class="hero-art">
+        <img src="images/logo.webp" width="640" height="640" alt="WolfCuts logo: a smiling Akita in front of a dusty pink circle, with the words Professional Dog Groomer">
+      </div>
+    </section>
+
+    <!-- How booking works -->
+    <section id="booking" class="booking" aria-labelledby="booking-heading">
+      <h2 id="booking-heading">How booking works</h2>
+      <ol class="steps">
+        <li>
+          <h3>Get in touch</h3>
+          <p>Call, email, or message me on <a href="https://www.instagram.com/wolfcutsgrooming/" target="_blank" rel="noopener">Instagram</a> or <a href="https://www.facebook.com/wolfcutsgrooming/" target="_blank" rel="noopener">Facebook</a>. Tell me your dog’s breed and when they were last groomed.</p>
+        </li>
+        <li>
+          <h3>Pick a time</h3>
+          <p>I’m open 7am–8pm, seven days a week, so we can usually find a slot that suits you.</p>
+        </li>
+        <li>
+          <h3>Drop off at the salon</h3>
+          <p>Bring your dog to Four Chimneys, Norton Fitzwarren. I’ll let you know when they’re ready to collect.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Prices -->
+    <section id="prices" class="prices" aria-labelledby="prices-heading">
+      <div class="prices-inner">
+        <h2 id="prices-heading">Prices</h2>
+        <p class="section-intro">Priced by coat and size. Not sure which size your dog is? Just ask when you book.</p>
+
+        <table class="price-table">
+          <caption class="visually-hidden">Grooming prices by service and dog size</caption>
+          <thead>
+            <tr>
+              <td></td>
+              <th scope="col"><svg class="size-dog s1" aria-hidden="true"><use href="#i-dog"/></svg>Toy / Small</th>
+              <th scope="col"><svg class="size-dog s2" aria-hidden="true"><use href="#i-dog"/></svg>Medium</th>
+              <th scope="col"><svg class="size-dog s3" aria-hidden="true"><use href="#i-dog"/></svg>Large</th>
+              <th scope="col"><svg class="size-dog s4" aria-hidden="true"><use href="#i-dog"/></svg>X Large</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Full groom <span>short coat</span></th>
+              <td>£35</td><td>£42</td><td>£45</td><td>£49</td>
+            </tr>
+            <tr>
+              <th scope="row">Full groom <span>long coat</span></th>
+              <td>£50</td><td>£55</td><td>£60</td><td>£78</td>
+            </tr>
+            <tr>
+              <th scope="row">Full groom <span>spaniel</span></th>
+              <td colspan="4" class="span-all">£50</td>
+            </tr>
+            <tr>
+              <th scope="row">Bath &amp; brush <span>short coat</span></th>
+              <td>£30</td><td>£32</td><td>£37</td><td>£42</td>
+            </tr>
+            <tr>
+              <th scope="row">Bath &amp; brush <span>long coat</span></th>
+              <td>£32</td><td>£35</td><td>£40</td><td>£47</td>
+            </tr>
+            <tr>
+              <th scope="row">Puppy groom</th>
+              <td colspan="2" class="span-two">£30</td>
+              <td colspan="2" class="span-two">£35</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <!-- TODO: check these descriptions with Harri -->
+    <section id="services" class="services" aria-labelledby="services-heading">
+      <h2 id="services-heading">Services</h2>
+      <dl class="service-list">
+        <div>
+          <dt>Full groom</dt>
+          <dd>A bath, blow-dry and brush-out, then a full haircut in the style you’d like. Spaniels have their own set price.</dd>
+        </div>
+        <div>
+          <dt>Bath &amp; brush</dt>
+          <dd>A bath, dry and thorough brush-out with no haircut. Good for short coats, or to keep a long coat fresh between full grooms.</dd>
+        </div>
+        <div>
+          <dt>Puppy groom</dt>
+          <dd>A gentle, unhurried first visit so puppies get used to the bath, the dryer and being handled, ready for grooms later on.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- Instagram -->
+    <section id="instagram" class="instagram" aria-labelledby="instagram-heading">
+      <div class="instagram-head">
+        <h2 id="instagram-heading">Latest grooms</h2>
+        <a class="btn btn-ghost" href="https://www.instagram.com/wolfcutsgrooming/" target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>
+          Follow @wolfcutsgrooming
+        </a>
+      </div>
+      <div id="instagram-feed" class="instagram-feed">
+        <p class="feed-fallback">See before-and-afters of recent grooms on <a href="https://www.instagram.com/wolfcutsgrooming/" target="_blank" rel="noopener">Instagram</a>.</p>
+      </div>
+    </section>
+
+    <!-- Find us -->
+    <section id="find" class="find" aria-labelledby="find-heading">
+      <div class="find-details">
+        <h2 id="find-heading">Find us</h2>
+        <p class="detail">
+          <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+          <span>Four Chimneys<br>Norton Fitzwarren<br>Taunton TA4 1DH</span>
+        </p>
+        <p class="detail">
+          <svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>
+          <span>Monday to Sunday<br>7am–8pm</span>
+        </p>
+        <a class="btn" href="https://maps.app.goo.gl/NnvJCdj8eYc6BCfu9" target="_blank" rel="noopener">Get directions</a>
+      </div>
+      <div class="map">
+        <iframe title="Map showing WolfCuts Dog Grooming in Norton Fitzwarren"
+          src="https://maps.google.com/maps?q=51.0310994,-3.1834008&amp;z=15&amp;output=embed"
+          width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <!-- About -->
+    <!-- TODO: replace with Harri's own words -->
+    <section id="about" class="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Harri</h2>
+      <div class="about-text">
+        <p>I’m Harri, the groomer behind WolfCuts. My salon is at Four Chimneys in Norton Fitzwarren, a few minutes from the centre of Taunton.</p>
+        <p>Whether it’s a puppy’s very first bath or a full groom for a fluffy giant, every dog gets the same calm, patient care, and goes home looking and feeling their best.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
+      <div class="contact-inner">
+        <div class="contact-direct">
+          <h2 id="contact-heading">Book a groom</h2>
+          <p>Get in touch however suits you. I’ll get back to you to arrange a time.</p>
+          <ul class="contact-list">
+            <li><a href="tel:+447769259163"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>07769 259163</a></li>
+            <li><a href="mailto:wolfcutsgrooming@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>wolfcutsgrooming@gmail.com</a></li>
+            <li><a href="https://www.instagram.com/wolfcutsgrooming/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>@wolfcutsgrooming</a></li>
+            <li><a href="https://www.facebook.com/wolfcutsgrooming/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg>WolfCuts on Facebook</a></li>
+          </ul>
+        </div>
+
+        <form id="contact-form" class="contact-form" action="https://formsubmit.co/wolfcutsgrooming@gmail.com" method="POST">
+          <h3>Or send a message</h3>
+          <input type="hidden" name="_subject" value="New message from the WolfCuts website">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://wolfcutsdoggrooming.com/#contact">
+          <!-- Honeypot: hidden from people, bots fill it in and FormSubmit drops the message -->
+          <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <label for="f-name">Your name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required>
+
+          <label for="f-email">Email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required>
+
+          <label for="f-phone">Phone <span class="optional">(optional)</span></label>
+          <input id="f-phone" name="phone" type="tel" autocomplete="tel">
+
+          <label for="f-dog">Dog’s name and breed</label>
+          <input id="f-dog" name="dog" type="text" required>
+
+          <label for="f-message">What would you like booked?</label>
+          <textarea id="f-message" name="message" rows="4" required></textarea>
+
+          <button class="btn" type="submit">Send message</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <img src="images/logo-small.png" width="64" height="64" alt="">
+    <p>WolfCuts Dog Grooming<br>Four Chimneys, Norton Fitzwarren, Taunton TA4 1DH</p>
+    <p class="footer-social">
+      <a href="https://www.instagram.com/wolfcutsgrooming/" target="_blank" rel="noopener" aria-label="WolfCuts on Instagram"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a>
+      <a href="https://www.facebook.com/wolfcutsgrooming/" target="_blank" rel="noopener" aria-label="WolfCuts on Facebook"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg></a>
+    </p>
+    <p class="small">© <span id="year"></span> WolfCuts Dog Grooming</p>
+  </footer>
+
+  <script>
+    // Behold.so Instagram feed. Paste the feed ID from behold.so here;
+    // while it's empty, the section shows a plain link to Instagram instead.
+    const BEHOLD_FEED_ID = '';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Mobile menu
+      const toggle = document.querySelector('.menu-toggle');
+      const links = document.getElementById('nav-links');
+      const setMenu = (open) => {
+        toggle.setAttribute('aria-expanded', String(open));
+        links.classList.toggle('open', open);
+      };
+      toggle.addEventListener('click', () => setMenu(toggle.getAttribute('aria-expanded') !== 'true'));
+      links.addEventListener('click', (e) => { if (e.target.closest('a')) setMenu(false); });
+
+      // Keep anchor jumps clear of the sticky header
+      const header = document.querySelector('.site-header');
+      const setOffset = () => document.documentElement.style.setProperty('--nav-offset', header.offsetHeight + 'px');
+      setOffset();
+      window.addEventListener('resize', setOffset);
+
+      // Instagram feed
+      if (BEHOLD_FEED_ID) {
+        const feed = document.getElementById('instagram-feed');
+        const widget = document.createElement('behold-widget');
+        widget.setAttribute('feed-id', BEHOLD_FEED_ID);
+        feed.replaceChildren(widget);
+        const s = document.createElement('script');
+        s.type = 'module';
+        s.src = 'https://w.behold.so/widget.js';
+        document.head.append(s);
+      }
+
+      // Contact form: send via FormSubmit's AJAX endpoint so visitors stay on the page.
+      // Without JS the form still posts normally and FormSubmit redirects back via _next.
+      const form = document.getElementById('contact-form');
+      const status = form.querySelector('.form-status');
+      const button = form.querySelector('button[type="submit"]');
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        button.disabled = true;
+        status.className = 'form-status';
+        status.textContent = 'Sending…';
+        try {
+          const res = await fetch('https://formsubmit.co/ajax/wolfcutsgrooming@gmail.com', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify(Object.fromEntries(new FormData(form))),
+          });
+          const data = await res.json().catch(() => ({}));
+          if (res.ok && String(data.success) === 'true') {
+            form.reset();
+            status.classList.add('ok');
+            status.textContent = 'Message sent. Harri will get back to you soon.';
+          } else {
+            throw new Error(data.message || `Status ${res.status}`);
+          }
+        } catch (err) {
+          console.error('Contact form failed:', err);
+          status.classList.add('error');
+          status.textContent = 'Your message didn’t send. Please try again, or call 07769 259163.';
+        } finally {
+          button.disabled = false;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
