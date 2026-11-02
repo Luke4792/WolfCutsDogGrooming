@@ -2,6 +2,7 @@
 
 Single-page site for WolfCuts Dog Grooming (Harri Pick, Norton Fitzwarren, Taunton), served at https://wolfcutsdoggrooming.com via GitHub Pages (`CNAME`). Plain HTML/CSS/JS, no build step: pushing to the default branch deploys.
 
+- Harri is a solo groomer and the whole site is her talking to the customer: write all copy, including form/status messages, in first person ("I", "me", "Find me"). Never "we"/"us", and never refer to "Harri" in the third person.
 - `index.html`: the whole site. Inline SVG icon sprite at the top of `<body>` (Lucide paths); one inline script at the bottom (mobile menu, `--nav-offset` for anchor jumps, Behold Instagram feed, contact form).
 - `style.css`: all styles. Brand colours are `:root` variables sampled from the logo. Bump `?v=` on the stylesheet link when changing it, since GitHub Pages caches CSS for 10 min.
 - `images/`: logo assets cut from `reference images/` (which is gitignored and must stay out of git).
