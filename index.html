@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700&family=Lilita+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 
@@ -43,6 +43,10 @@
         <li><a href="#instagram">Latest grooms</a></li>
         <li><a href="#find">Find me</a></li>
         <li><a href="#about">About</a></li>
+        <li class="social">
+          <a href="https://www.instagram.com/wolfcutsgrooming/" target="_blank" rel="noopener" aria-label="WolfCuts on Instagram"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a>
+          <a href="https://www.facebook.com/wolfcutsgrooming/" target="_blank" rel="noopener" aria-label="WolfCuts on Facebook"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg></a>
+        </li>
         <li><a class="btn btn-small" href="#contact">Book a groom</a></li>
       </ul>
     </nav>
@@ -62,7 +66,7 @@
           </a>
           <a class="btn btn-ghost" href="#contact">Send a message</a>
         </div>
-        <p class="hero-hours"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> Open every day, 7am–8pm</p>
+        <p class="hero-hours"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> Tuesday to Saturday, by appointment only</p>
       </div>
       <div class="hero-art">
         <img src="images/logo.webp" width="640" height="640" alt="WolfCuts logo: a smiling Akita in front of a dusty pink circle, with the words Professional Dog Groomer">
@@ -79,7 +83,7 @@
         </li>
         <li>
           <h3>Pick a time</h3>
-          <p>I’m open 7am–8pm, seven days a week, so I can usually fit you in at a time that suits you.</p>
+          <p>I’m open Tuesday to Saturday, by appointment only. Tell me which days suit you and I’ll find a slot.</p>
         </li>
         <li>
           <h3>Drop off at the salon</h3>
@@ -92,7 +96,7 @@
     <section id="prices" class="prices" aria-labelledby="prices-heading">
       <div class="prices-inner">
         <h2 id="prices-heading">Prices</h2>
-        <p class="section-intro">Priced by coat and size. Not sure which size your dog is? Just ask when you book.</p>
+        <p class="section-intro">Starting prices by coat and size. Not sure which size your dog is? Just ask when you book.</p>
 
         <table class="price-table">
           <caption class="visually-hidden">Grooming prices by service and dog size</caption>
@@ -113,34 +117,30 @@
             <tr class="group"><th scope="rowgroup" colspan="5">Full groom</th></tr>
             <tr>
               <th scope="row">Short coat</th>
-              <td>£35</td><td>£42</td><td>£45</td><td>£49</td>
+              <td><small class="from">from</small> £35</td><td><small class="from">from</small> £42</td><td><small class="from">from</small> £45</td><td><small class="from">from</small> £49</td>
             </tr>
             <tr>
               <th scope="row">Long coat</th>
-              <td>£50</td><td>£55</td><td>£60</td><td>£78</td>
-            </tr>
-            <tr>
-              <th scope="row">Spaniel</th>
-              <td colspan="4"><span class="span-bar">£50 <small>any size</small></span></td>
+              <td><small class="from">from</small> £50</td><td><small class="from">from</small> £55</td><td><small class="from">from</small> £60</td><td><small class="from">from</small> £78</td>
             </tr>
           </tbody>
           <tbody>
             <tr class="group"><th scope="rowgroup" colspan="5">Bath &amp; brush</th></tr>
             <tr>
               <th scope="row">Short coat</th>
-              <td>£30</td><td>£32</td><td>£37</td><td>£42</td>
+              <td><small class="from">from</small> £30</td><td><small class="from">from</small> £32</td><td><small class="from">from</small> £37</td><td><small class="from">from</small> £42</td>
             </tr>
             <tr>
               <th scope="row">Long coat</th>
-              <td>£32</td><td>£35</td><td>£40</td><td>£47</td>
+              <td><small class="from">from</small> £32</td><td><small class="from">from</small> £35</td><td><small class="from">from</small> £40</td><td><small class="from">from</small> £47</td>
             </tr>
           </tbody>
           <tbody>
             <tr class="group"><th scope="rowgroup" colspan="5">Puppy groom</th></tr>
             <tr>
               <th scope="row">Any coat</th>
-              <td colspan="2"><span class="span-bar">£30 <small>toy to medium</small></span></td>
-              <td colspan="2"><span class="span-bar">£35 <small>large to X large</small></span></td>
+              <td colspan="2"><span class="span-bar"><small class="from">from</small> £30 <small>toy to medium</small></span></td>
+              <td colspan="2"><span class="span-bar"><small class="from">from</small> £35 <small>large to X large</small></span></td>
             </tr>
           </tbody>
         </table>
@@ -154,7 +154,7 @@
       <dl class="service-list">
         <div>
           <dt>Full groom</dt>
-          <dd>A bath, blow-dry and brush-out, then a full haircut in the style you’d like. Spaniels have their own set price.</dd>
+          <dd>A bath, blow-dry and brush-out, then a full haircut in the style you’d like.</dd>
         </div>
         <div>
           <dt>Bath &amp; brush</dt>
@@ -191,7 +191,7 @@
         </p>
         <p class="detail">
           <svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>
-          <span>Monday to Sunday<br>7am–8pm</span>
+          <span>Tuesday to Saturday<br>By appointment only</span>
         </p>
         <a class="btn" href="https://maps.app.goo.gl/NnvJCdj8eYc6BCfu9" target="_blank" rel="noopener">Get directions</a>
       </div>
@@ -244,8 +244,32 @@
           <label for="f-phone">Phone <span class="optional">(optional)</span></label>
           <input id="f-phone" name="phone" type="tel" autocomplete="tel">
 
-          <label for="f-dog">Dog’s name and breed</label>
-          <input id="f-dog" name="dog" type="text" required>
+          <div class="field-row">
+            <div>
+              <label for="f-dog">Dog’s name</label>
+              <input id="f-dog" name="dog_name" type="text" required>
+            </div>
+            <div>
+              <label for="f-breed">Breed</label>
+              <input id="f-breed" name="breed" type="text" required>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div>
+              <label for="f-date">Preferred date <span class="optional">(optional)</span></label>
+              <input id="f-date" name="preferred_date" type="date" aria-describedby="f-date-hint">
+              <p id="f-date-hint" class="field-hint">Tuesday to Saturday</p>
+            </div>
+            <div>
+              <label for="f-time">Preferred time <span class="optional">(optional)</span></label>
+              <select id="f-time" name="preferred_time">
+                <option value="">No preference</option>
+                <option>Morning</option>
+                <option>Afternoon</option>
+              </select>
+            </div>
+          </div>
 
           <label for="f-message">What would you like booked?</label>
           <textarea id="f-message" name="message" rows="4" required></textarea>
@@ -259,7 +283,6 @@
   </main>
 
   <footer class="site-footer">
-    <img src="images/logo-small.png" width="64" height="64" alt="">
     <p>WolfCuts Dog Grooming<br>Four Chimneys, Norton Fitzwarren, Taunton TA4 1DH</p>
     <p class="footer-social">
       <a href="https://www.instagram.com/wolfcutsgrooming/" target="_blank" rel="noopener" aria-label="WolfCuts on Instagram"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a>
@@ -309,6 +332,26 @@
       const form = document.getElementById('contact-form');
       const status = form.querySelector('.form-status');
       const button = form.querySelector('button[type="submit"]');
+
+      // Preferred date: no past dates, and only days Harri works (Tue–Sat).
+      const dateInput = document.getElementById('f-date');
+      const parseDate = (v) => { const [y, m, d] = v.split('-').map(Number); return new Date(y, m - 1, d); };
+      const today = new Date();
+      dateInput.min = [today.getFullYear(), String(today.getMonth() + 1).padStart(2, '0'), String(today.getDate()).padStart(2, '0')].join('-');
+      dateInput.addEventListener('input', () => {
+        const day = dateInput.value ? parseDate(dateInput.value).getDay() : null;
+        dateInput.setCustomValidity(day === 0 || day === 1 ? 'I’m open Tuesday to Saturday. Please pick another day.' : '');
+      });
+
+      // Form fields as sent to FormSubmit, with the date written out UK-style ("Tue 12 Nov 2026").
+      const formPayload = () => {
+        const data = Object.fromEntries(new FormData(form));
+        if (data.preferred_date) {
+          data.preferred_date = parseDate(data.preferred_date).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' });
+        }
+        return data;
+      };
+
       form.addEventListener('submit', async (e) => {
         e.preventDefault();
         button.disabled = true;
@@ -318,7 +361,7 @@
           const res = await fetch('https://formsubmit.co/ajax/wolfcutsgrooming@gmail.com', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-            body: JSON.stringify(Object.fromEntries(new FormData(form))),
+            body: JSON.stringify(formPayload()),
           });
           const data = await res.json().catch(() => ({}));
           if (res.ok && String(data.success) === 'true') {

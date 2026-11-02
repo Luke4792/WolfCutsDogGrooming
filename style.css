@@ -157,6 +157,9 @@ section[id], .contact-form { scroll-margin-top: calc(var(--nav-offset) + 1rem); 
   text-decoration: none;
 }
 .nav-links a:not(.btn):hover { color: var(--rust); text-decoration: underline; }
+.nav-links .social { display: flex; gap: 0.75rem; }
+.nav-links .social a { display: flex; padding: 0.25rem; }
+.nav-links .social .icon { width: 1.35rem; height: 1.35rem; }
 
 .menu-toggle {
   display: none;
@@ -169,7 +172,7 @@ section[id], .contact-form { scroll-margin-top: calc(var(--nav-offset) + 1rem); 
 }
 .menu-toggle .icon { width: 1.6rem; height: 1.6rem; display: block; }
 
-@media (max-width: 860px) {
+@media (max-width: 1024px) {
   .menu-toggle { display: block; }
   .nav-links {
     display: none;
@@ -186,6 +189,9 @@ section[id], .contact-form { scroll-margin-top: calc(var(--nav-offset) + 1rem); 
   }
   .nav-links.open { display: flex; }
   .nav-links a:not(.btn) { display: block; padding: 0.75rem 0; border-bottom: 1px solid var(--cream); }
+  .nav-links .social { gap: 1.25rem; padding-top: 0.75rem; }
+  .nav-links .social a { padding: 0.25rem 0; border-bottom: 0; }
+  .nav-links .social .icon { width: 1.6rem; height: 1.6rem; }
   .nav-links .btn { margin-top: 1rem; justify-content: center; }
 }
 
@@ -318,6 +324,14 @@ section[id], .contact-form { scroll-margin-top: calc(var(--nav-offset) + 1rem); 
   font-variant-numeric: tabular-nums;
 }
 .price-table tbody tr:last-child > * { padding-bottom: 1.1rem; }
+
+.price-table .from {
+  display: block;
+  font-size: 0.75rem;
+  line-height: 1.1;
+  opacity: 0.75;
+}
+.span-bar .from { display: inline; }
 
 /* A price that covers several sizes sits on a bar spanning those columns */
 .span-bar {
@@ -468,6 +482,27 @@ section[id], .contact-form { scroll-margin-top: calc(var(--nav-offset) + 1rem); 
 .contact-form input:focus,
 .contact-form textarea:focus { border-color: var(--rust); outline: none; }
 .contact-form textarea { resize: vertical; }
+.contact-form select {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  border: 2px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+}
+.contact-form select:focus { border-color: var(--rust); outline: none; }
+.contact-form input[type="date"] { min-height: 3.1rem; } /* iOS Safari collapses empty date inputs */
+.field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 1rem;
+}
+.field-row > div { display: grid; gap: 0.35rem; align-content: start; }
+.field-hint { margin: 0; font-size: 0.85rem; opacity: 0.8; }
+@media (max-width: 420px) {
+  .field-row { grid-template-columns: 1fr; }
+}
 .contact-form .btn { justify-self: start; margin-top: 1.25rem; }
 .honeypot { position: absolute; left: -9999px; }
 .form-status { margin: 0.5rem 0 0; min-height: 1.6em; font-weight: 500; }
@@ -485,7 +520,6 @@ section[id], .contact-form { scroll-margin-top: calc(var(--nav-offset) + 1rem); 
   background: var(--ink);
   color: var(--cream);
 }
-.site-footer img { margin: 0 auto 1rem; }
 .site-footer p { margin: 0 0 0.5rem; }
 .site-footer a { color: var(--cream); }
 .footer-social { display: flex; justify-content: center; gap: 1.25rem; }
